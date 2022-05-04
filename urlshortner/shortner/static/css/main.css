@@ -1,0 +1,27 @@
+.explanationitem
+{
+
+}
+
+.explainationdiv
+{
+    border: solid grey 1px
+}
+
+.title
+{
+    display: flex;
+    justify-content: center;
+}
+
+.urlform
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.submitbtn
+{
+    height:70%
+}
