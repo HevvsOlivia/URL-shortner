@@ -12,7 +12,7 @@
 
 ### Usage
 
-- Enter in terminal `pyhton manage.py runserver` to open app in localhost:8000
+- Enter in terminal `python manage.py runserver` to open app in localhost:8000
 
 ## Bugs
 
