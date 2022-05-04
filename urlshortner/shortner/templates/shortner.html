@@ -2,11 +2,11 @@
 
 {% block content %}
 
-    <!-- <input id="urlinput" classname="urlinput" type="text" placeholder="Input the url you wish to shorten here"></input>
-    <button id="urlbtn" classname="urlbtn">Click here to generate a shortened url</button>
-    <p id ="resultp" classname="resultp"></p> -->
-
-    <p id="explanation">Please input a web address below, including http:// i.e. http://www.google.com then click "Create new shortened link" to generate your shortened link."</p>
+    <div id="explanation">
+        <p>Please input a web address below. This <b>MUST</b> include " http:// " at the start.</p> 
+        <p>Then click "Create new shortened link" to generate your shortened link.</p> 
+        <p> Example: http://www.google.com </p>
+    </div>
 
     <form method="POST">
     
@@ -17,14 +17,6 @@
         <input type = "submit" value = "Create new shortened link">
 
     </form>
-
-
-    {% for link in context.data %}
-
-    <p>{{link.original}} :  {{link.shortened}}</p>
-
-    {% endfor %}
-
 
 
 {% endblock content %}
