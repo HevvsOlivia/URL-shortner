@@ -27,7 +27,7 @@
 
 ### Challenges
 
-- Setting up the css folder 
+- Styling
 
 ## Authors and Acknowledgements
 
