@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <!-- <input id="urlinput" classname="urlinput" type="text" placeholder="Input the url you wish to shorten here"></input>
+    <button id="urlbtn" classname="urlbtn">Click here to generate a shortened url</button>
+    <p id ="resultp" classname="resultp"></p> -->
+
+    <p id="explanation">Please input a web address below, including http:// i.e. http://www.google.com then click "Create new shortened link" to generate your shortened link."</p>
+
+    <form method="POST">
+    
+        {% csrf_token %}
+
+        {{form.as_p}}
+
+        <input type = "submit" value = "Create new shortened link">
+
+    </form>
+
+
+    {% for link in context.data %}
+
+    <p>{{link.original}} :  {{link.shortened}}</p>
+
+    {% endfor %}
+
+
+
+{% endblock content %}
