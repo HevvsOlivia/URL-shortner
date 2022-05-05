@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="explainationdiv mb-2 shadow-lg" id="explanation">
+            <p class="explanationitem">Please input a web address below. This <b>MUST</b> include " http:// " at the start.</p> 
+            <p class="explanationitem">Then click "Create new shortened link" to generate your shortened link.</p> 
+            <p class="explanationitem"> Example: http://www.google.com </p>
+        </div>
+
+        <form class="urlform container mb-3" method="POST">
+        
+            {% csrf_token %}
+
+            {{form.as_p}}
+
+            <input class = "submitbtn" type = "submit" value = "Create new shortened link">
+
+        </form>
+    </div>
+
+{% endblock content %}

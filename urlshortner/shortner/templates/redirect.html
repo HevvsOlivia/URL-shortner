@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{{link|json_script:"link"}}
+
+<p class = "redirectlink">redirect: {{link}}</p>
+
+<script defer>
+
+    // function redirect()
+    // {
+    //     const short = document.getElementById("link");
+    //     window.location = short.innerText
+    //     console.log(short.innerText)
+    // }
+
+    // redirect();
+</script>
+
+{% endblock content %}
